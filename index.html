@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { margin: 0;}
+    canvas {   
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; 
+          }
+
+  </style>
+</head>
+<body>
+  
+  <nav class="bg-purple-950 sticky top-0 border-t-2 border-light">
+    <div class="flex justify-center">
+      <div>
+        <a href="#home" class="text-slate-300 hover:text-slate-50 hover:border-b-4 mx-3 p-1 hover:p-2 border-slate-400">Home</a>
+      </div>
+      <div>
+        <a href="#details" class="text-slate-300 hover:text-slate-50 hover:border-b-4 mx-3 p-1 hover:p-2 border-slate-400">My details</a>
+      </div>
+      <div>
+        <a href="#experiences" class="text-slate-300 hover:text-slate-50 hover:border-b-4 mx-3 p-1 hover:p-2 border-slate-400">Experience</a>
+      </div>
+      <div>
+        <a href="#contact" class="text-slate-300 hover:text-slate-50 hover:border-b-4 mx-3 p-1 hover:p-2 border-slate-400">Contact</a>
+      </div>
+    </div>
+    <div class="flex justify-center sm:justify-end border-y-2 border-light">
+      <div>
+        <a href="https://github.com/briskilal10">
+          <img class="h-14 hover:border-2 hover:rounded-full hover:border-cayan-500 my-1 mx-2" src="images/github.png" alt=""/>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.linkedin.com/in/briskilal-joseph-8b42581b7/">
+          <img class="h-14 hover:border-2 hover:rounded-full hover:border-cayan-500 my-1 mx-2" src="images/linkedin.png" alt=""/>
+        </a>
+      </div>
+      <div>
+        <a href="#contact">
+          <img class="h-14 hover:border-2 hover:rounded-md hover:border-cayan-500 my-1 mx-2" src="images/email.png" alt=""/>
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/channel/UCaQyzvBd__f2xGKVl9jW7RA">
+          <img class="h-14 hover:border-2 hover:rounded-2xl hover:border-cayan-500 my-1 mx-2" src="images/youtube.png" alt=""/>
+        </a>
+      </div>
+    </div>
+  </nav>
+  
+  <canvas id="background-canvas"></canvas>
+
+  <div class = "flex flex-col">
+    <div>
+      <div id="home" class = "flex flex-col sm:flex-row "> 
+        <div class = " flex-none sm:w-1/3 ">
+          <div class=" bg-purple-500/[.1] m-6 p-6 rounded-xl max-w-xl min-w-sm">
+            <div class=" p-1 ">
+              <img class=" my-auto mx-auto w-60 h-60 " src="images/portfolio_photo.png" alt="">
+            </div>
+            <div class=" text-center rounded text-white font-semibold m-5 ">
+              <div>Hello!</div>
+              <div>I'm Briskilal.J.</div>
+              <div>Assistant Professor</div>
+              <div>Area: Computer Science & Engineering</div> 
+              <div>Affiliation: Department of Computing Technologies, Kattankulathur Campus, SRM Institute of Science and Technology (formerly known as SRM University).</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="experience" class = "bg-purple-500/[.1] m-7 rounded-xl ">
+          <div>
+            <div class=" font-extrabold rounded-lg m-2 ">
+              <div class=" text-2xl  text-slate-100 p-5">
+                <h2>Work Experience </h2>
+              </div>
+              <div class=" text-slate-50 p-5">
+                <p class="border-b-2 border-fuchsia-300">•	Working as an Assistant Professor in SRM Institute of Science and Technology, Kattankulathur from 14th June 2017 to till now.</p>
+                <p class="border-b-2 border-fuchsia-300">•	Worked as an Assistant Professor in Vel Tech Hi Tech Rangarajan Dr. Sagunthala Engineering College, Chennai from Feb 2015 to March 2016.</p>
+              </div>
+
+              <div class=" text-2xl  text-slate-100 p-5">
+                <h2>Consultancy Project </h2>
+              </div>
+              <div class=" text-slate-50 p-5">
+                <p class="border-b-2 border-fuchsia-300">•	Completed Samsung Prism Worklet titled English- Telugu Code-switched Spoken Language Identification from May 2021 to Nov 2021.</p>
+              </div>
+
+              <div class=" text-2xl  text-slate-100 p-5">
+                <h2>SIIC Funded Project </h2>
+              </div>
+              <div class=" text-slate-50 p-5">
+                <p class="border-b-2 border-fuchsia-300">•	Completed SRM SIIC project titled,” CURAE”, from Jan 2021 to Dec 2021.</p>
+              </div>
+
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="details">
+      <div>
+        <div class="m-3 p-3 ">
+        <div class="flex flex-col justify-center ">
+            <br>
+            <div class="text-3xl font-extrabold mx-auto bg-purple-500/[.1] rounded-lg p-6 text-slate-50">
+              Education details
+            </div>
+            <br>
+          </div>
+
+          <div class=" flex flex-wrap justify-around flex-col lg:flex-row m-5">
+            
+            <div class="text-xl font-extrabold  m-2 rounded-lg bg-purple-500/[.1] max-w-lg ">
+              <div class=" mx-3 text-slate-50 ">Master of Technology</div>
+              <div class=" mx-3 text-slate-300 ">Computer Science & Engineering</div>
+              <div class=" mx-3 text-slate-300 ">SKR Engineering College, Anna University </div>
+              <div class=" mx-3 text-slate-400 ">2007</div>
+            </div>
+
+            <div class="text-xl font-extrabold  m-2 rounded-lg bg-purple-500/[.1] max-w-lg">
+              <div class=" mx-3 text-slate-50 ">Bachelor of Engineering</div>
+              <div class=" mx-3 text-slate-300 ">Computer Science & Engineering</div>
+              <div class=" mx-3 text-slate-300 ">T.J Institute of Technolgy, Anna University,</div>
+              <div class=" mx-3 text-slate-400 ">2012</div>
+            </div>
+
+
+          </div>
+          <div>
+          <div class="flex flex-col justify-center ">
+              <br>
+              <div class="text-3xl font-extrabold mx-auto bg-purple-500/[.1] rounded-lg p-6 text-slate-50 ">
+                Other details
+              </div>
+              <br>
+            </div>
+
+            <div class=" flex flex-wrap justify-center flex-col lg:flex-row m-5 ">
+                
+              <div class=" font-extrabold rounded-lg bg-purple-500/[.1] m-2 max-w-lg ">
+                <div class=" text-2xl  p-5 text-slate-50">
+                  <h2>Online Courses </h2>
+                </div>
+                <div class=" p-5 text-slate-100"> 
+                  <p class="border-b-2 border-fuchsia-300">• Completed an online course on Google Cloud Computing Fundamentals at Google from March 2022 to Apr 2022.</p>
+                  <p class="border-b-2 border-fuchsia-300">• Completed NITTT, AICTE course, “Technology enabled Learning and Life-Long Self Learning, July 2022.</p>
+                  <p class="border-b-2 border-fuchsia-300">• Completed NITTT, AICTE course, “Orientation towards Technical Education and Curriculum aspects”, September 2021.</p>
+                  <p class="border-b-2 border-fuchsia-300">• Machine learning - NPTEL with ELITE</p>
+                  <p class="border-b-2 border-fuchsia-300">• Deep Learning Masters - I-Neuron from October 2020 to June 2021.</p>
+                  <p class="border-b-2 border-fuchsia-300">• Introduction to software product management- Coursera</p>
+                  <p class="border-b-2 border-fuchsia-300">• AI for everyone - coursera</p>
+                  <p class="border-b-2 border-fuchsia-300">• Python data structures - coursera</p>
+                  <p class="border-b-2 border-fuchsia-300">• Introduction to Artificial Intelligence - Simplilearn</p>
+                  <p class="border-b-2 border-fuchsia-300">• Deep learning Advanced NLP and RNN - UDEMY</p>
+                  <p class="border-b-2 border-fuchsia-300">• Deep learning: Numpy stack in python - UDEMY</p>
+                  <p class="border-b-2 border-fuchsia-300">• Natural language processing - UDEMY</p>
+                </div>
+              </div>
+              
+              <div class=" font-extrabold rounded-lg bg-purple-500/[.1] m-2 max-w-lg ">
+                <div class=" text-2xl p-5 text-slate-50">
+                  <h2>Areas of Interest</h2>
+                </div>
+                <div class=" p-5 text-slate-100">
+                  <p class="border-b-2 border-fuchsia-300">•	Natural Language Processing</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Machine Learning</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Data Structures</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Computer Network</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Database and Management System</p>
+                  <p class="border-b-2 border-fuchsia-300">•	OOPS</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Microprocessors and Microcontrollers</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Program Design and development</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Ecommerce</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Semantic Web</p>
+                </div>
+              </div> 
+
+              <br>
+
+              <div class=" font-extrabold rounded-lg bg-purple-500/[.1] m-2 max-w-lg ">        
+                <div class=" text-2xl p-5 text-slate-50">
+                  <h2>Awards</h2>
+                </div>
+                <div class=" p-5 text-slate-100">
+                  <p class="border-b-2 border-fuchsia-300">•	Received Young Researcher 	Award for the paper entitled " Classification of Idiom and Literal Sentences in Tamil Language using Support Vector Machine and Grid search Optimization technique " in Virtual International Conference on Soft Computing, Optimization Theory and Applications, on March 26 and 27, 2021 conducted by Birla Institute of Science and Technology, Jharkhand.</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Received Gold Medal for the paper entitled "TamBERTa: A Tamil RoBERTa model for classifying Idiomatic and Literal sentences “ in Research day 2022 on Feb 2022 conducted by SRM Institute of Science and Technology, Kattankulathur.</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Topper in an online course on Machine Learning at NPTEL. (Elite)</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Certificate of Excellence in Samsung project titled English- Telugu Code-switched Spoken Language Identification and got $900.</p>
+                  <p class="border-b-2 border-fuchsia-300">•	Awarded GOLD MEDAL for being the College Topper (B.E. CSE) secured SECOND RANK from T.J Institute of Technology, Karapakkam.</p>
+                </div>
+              </div> 
+
+              <div class=" font-extrabold rounded-lg bg-purple-500/[.1]  m-2 max-w-lg ">
+                <div class=" text-2xl  p-5 text-slate-50">
+                  <h2>Certifications done</h2>
+                </div>
+                <div class=" p-5 text-slate-100">
+                  <p class="border-b-2 border-fuchsia-300">Diploma in Relational Database Management Systems [ Includes VB, ORACLE, D2K].</p>
+                  <p class="border-b-2 border-fuchsia-300">Certificate of merit for obtaining 98% result in software quality management subject.</p>
+                  <p class="border-b-2 border-fuchsia-300">Certificate of merit for obtaining 91% result in Management Information Systems.</p>
+                  <p class="border-b-2 border-fuchsia-300">Certification on OOAD using UML with fundamentals of Rational Rose.</p>
+                  <p class="border-b-2 border-fuchsia-300">Internal Auditor certification by creative management consultant.</p>
+                </div>
+        
+                <div class=" text-2xl  p-5 text-slate-50">
+                  <h2>Patents</h2>
+                </div>
+                <div class=" p-5 text-slate-100">
+                  <p class="border-b-2 border-fuchsia-300">•	IoT enabled audio player integrated printer, 336951-001,2021.</p>
+                  <p class="border-b-2 border-fuchsia-300">•	A Secure Block- chain based medical internet of things health care data management system, 202241064064, 2022.</p>
+                </div>
+              </div> 
+
+              <br>
+
+              <div class=" font-extrabold rounded-lg bg-purple-500/[.1] m-2 max-w-xxl ">
+                <br>
+                <div class=" text-2xl  p-5 text-slate-50">
+                  <h2>Workshop and FDP attended</h2>
+                </div>
+                <div class=" p-5 text-slate-100">
+                  <p class="border-b-2 border-fuchsia-300">• Participated in “A Five day Workshop on Emerging Trends 2.0”, Organized by BIT Institute of Technology – Hindupur in association with Huddle Rise Academy – Bangalore held from June 7 2021 to June 11 ,2021. </p>
+                  <p class="border-b-2 border-fuchsia-300">• OFDP on Python ,IIT Bombay(Five days). </p>
+                  <p class="border-b-2 border-fuchsia-300">• Scilab Test organized at Sinhgad College of Engineering, Spoken Tutorial Project, IIT Bombay. </p>
+                  <p class="border-b-2 border-fuchsia-300">• Online Workshop on ‘Scientific Writing for Journals’, by Springer Nature, on 15th may,2020. </p>
+                  <p class="border-b-2 border-fuchsia-300">• Basic Online Research Method Workshop -REST Society for Research International, from 28th April to 30th, April 2020. </p>
+                  <p class="border-b-2 border-fuchsia-300">• Participated in “First Principles of Artificial Intelligence(AI) and Machine Learning “on April 25, 2020, INUAID Solutions pvt Ltd (IITM Incubation cell) </p>
+                  <p class="border-b-2 border-fuchsia-300">• Participated and Presented National level workshop and Competition on "MOBIPRENEUR in Android App Development" Organised by Techunt 2014-India’s talent hunt for entrepreneurship by Computer Society of India (CSI) and Nurture Talent Academy (NTA).</p>
+                  <p class="border-b-2 border-fuchsia-300">• Participated in the one day workshop on “ADVANCED J2EE CONCEPTS” organized by the School of Computing Science and Engineering, VIT Chennai on 26th April. </p>
+                  <p class="border-b-2 border-fuchsia-300">• Attended FDP conducted by MICROSOFT, March 2018 and certified as Microsoft Innovative Educator.</p>
+                  <p class="border-b-2 border-fuchsia-300">• Attended one day workshop on IOT based Smart Cities conducted by Dr. Michael Ho, Deputy Secretary- General, TIOTA (TAIWAN). </p>
+                </div>
+              </div> 
+
+            <div class="flex p-4 ">
+              
+              <details class=" font-bold rounded-lg bg-purple-50 m-2 ">
+                
+                <summary class=" text-2xl bg-clip-text p-5 text-transparent bg-purple-900 hover:bg-purple-500">
+                  Click to view my Journal Publication  
+                </summary>
+                
+                <div class="bg-clip-text p-5 text-transparent bg-purple-700">
+                    <p class="border-b-2 text-xl border-fuchsia-300">1.	Gupta, S., Marwah, S., & Briskilal, J. (2022). AI Music Generator. Journal of Pharmaceutical Negative Results, 67-71.
+                    <p class="border-b-2 text-xl border-fuchsia-300">2.	Mangla, A., Briskilal, J., & Senthil Kumar, D. (2022). Image Classification of Indian Rural Development Projects Using Transfer Learning and CNN. In Expert Clouds and Applications (pp. 17-29). Springer, Singapore.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">3.	Gupta, A., Mishra, V., & Briskilal, J. (2022, May). Fake news detection using Ensemble model. In 2022 Second International Conference on Interdisciplinary Cyber Physical Systems (ICPS) (pp. 34-39). IEEE.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">4.	Briskilal.J, Subalalitha C.N.,” Classification of Idiomatic Sentences Using AWD-LSTM”, Lecture Notes in Networks and Systems, vol-209, 2021, pp.113-124.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">5.	Briskilal.J, Subalalitha C.N.,” An ensemble model for classifying idioms and literal texts using BERT and RoBERTa, Information Processing Management , vol-59,2022, IF:6.22</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">6.	Briskilal.J, Subalalitha C.N., Classification of Idioms and Literals Using Support Vector Machine and Naïve Bayes Classifier,Lecture Notes in Electrical Engineering, https://doi.org/10.1007/978-981-16-5078-9_42</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">7.	Riyaz Ahmed, Bhuvan Raguraman,Briskilal.J,”Using Hierarchical Transformers for Document Classification in Tamil Language ”, Lecture Notes on Data Engineering and Communication Technologies, vol-75, 2021, pp.741-751.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">8.	KVS Adithya, Srrinivas Reddy, Briskilal J,”Age related Sentiment analysis for Efficient Review Mining”, ”,International Journal of Science and technology, vol-29,No.6, 2020,pp.2523-2530</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">9.	Briskilal.J, Ashwin singh, Divanshu Ojhu,”My Therapist:A cognitive approach towards Natural Language Processing”,International Journal of Science and technology, vol-29,No.6, 2020, pp.2510-2522</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">10.	S.G.Shivabhinav,K.S.Puvivarun, Briskilal,”Estimation of spinal curvature using machine learning”, International Journal of Psychosocial Rehabilitation, vol-24,Issue 05, 2020 ,ISSN:1475-7192</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">11.	Ananth Kalyanasundaram,Surya Prabhakaran,Briskilal, Senthil Kumar,”Detecion of Pathological Myopia using convolutional neural network”, International Journal of Psychosocial Rehabilitiation, vol-24,Issue 05, 2020 ,ISSN:1475-7192</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">12.	A.K.S.C.Bhaskar, Briskilal.J,”Heart prediction using Machine learning”,International Journal of Psychosocial Rehabilitiation, vol-24,Issue 06, 2020 ,ISSN:1475-7192</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">13.	J.Briskilal,Vamsi, Rohith, “Home Automation using Smart Cube”, Indian Journal of Pure and Applied Mathematics IJPAM, Volume 118, April 2018.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">14.	 Namrata, Ranga Rao,J.Briskilal “Unmasking Fraudulent ranking of Mobile Application”, Indian Journal Of Pure and Applied Mathematics IJPAM, Volume 118, April 2018</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">15.	 M.Gowthami, J.Briskilal, R.Jayashree, “Scheduling Job Queue on Hadoop using Hybrid Hadoop fair Sojourn Protocol”, Indian Journal of Science and Technology INDJST, ISSN: 0974-6846, Volume 9, April 2016.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">16.	Veeramalai Sankaradass, J.Briskilal, M.Gowthami, K.Karthic,” Motion Based Background Subtraction and Extraction Using Decolor and K-Means Clustering for Providing Security”, International Journal of Applied Engineering Research Vol.10, Issue 1, 2015, pp.19-23.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">17.	Veeramalai Sankaradass, D.Daya Florance, M. Gowthami, J.Briskilal,” Privacy and Security in Distributed Information Sharing Through Brokering System”, Australian Journal of Basic and Applied Sciences Vol.9, Issue 7, 2015, pp.755-758.</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">18.	J.Briskilal, Dr.Divya Satish, “An Effective Enactment of  Broadcasting XML in Wireless Mobile Environment”, IEEE International Conference of Recent Trends in Information Technology (ICRTIT) 978-1- 4799-4989- 2 April – May, 2014 (IEEE EXPLORE).</p>
+                    <p class="border-b-2 text-xl border-fuchsia-300">19.	J.Briskilal, Dr.Divya Satish,” XML Automation Tool: A Prime Method for Streaming XML in Wireless Mobile Networks, International Journal of Research in Engineering Advanced Technology (IJREAT) ISSN: 2320 – 8791, Volume 2, Issue 2, April – May, 2014.</p>
+                </div>
+
+              </details>          
+
+              <details class=" font-bold rounded-lg bg-purple-50 m-2 ">
+                
+                <summary class=" text-2xl bg-clip-text p-5 text-transparent bg-purple-900 hover:bg-purple-500">
+                  Click to view my Paper Presentations in Conferences
+                </summary>
+                
+                <div class="bg-clip-text p-5 text-transparent bg-purple-700">
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled,” Classification of Idioms and Literals using Support Vector Machine and Naïve Bayes Classifier”, in the International conference on Machine vision and Augmented Intelligence , held on 11th and 14th February,2021 at IIITDM, Jabalpur, India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled,” Classification of Idiomatic Sentences using AWD - LSTM”, in the International conference on Machine vision and Augmented Intelligence , held on 18th and 19th february,2021 at GITAM University, Bangalore, India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled, ”Classification of Idiom and Literal Sentences in Tamil Language using Support Vector Machine and Grid search Optimization Technique”, in the Virtual International conference on Soft Computing, Optimization Theory and Applications, held on 26th and 27th March,2021 at BIRLA Institute of Technology, Mesra, Ranchi, India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled,” Detection of Pathological Myopia using Convolutional Neural Networks”, in the International conference on Expert clouds and Applications , held on 14th and 15th march, 2020 at Prince Shri Venkateswara College of Engineering, Chennai.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled, “Estimation of spinal curvature using Machine learning”, in the International conference on Contemporary Engineering and technology, held on 14th and 15th march, 2020 at Prince Shri Venkateswara College of Engineering, Chennai.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled, ”Discourse Relation Identification in a Text containing Idioms”, in the Research Day held on 28th February 2019 at SRMIST,KTR,Chennai,India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled, “Machine Translation: Sanskrit to English”, in the International Conference on Internet of Things ( ICIoT ’19) held during March 11th-15th ,2019 at SRMIST,KTR,Chennai,India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled “Hybrid Filtering for Recommender System “in the National Level Conference on Big Data, Cloud and security(NCBS’18)  held during March 15th-16th,2018 at SRMIST, KTR, Chennai.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled “An Efficient Enactment Of Broadcasting XML In Wireless Mobile Environment” in the International Conference on Recent Trends in  Information Technology(ICRTIT 2014) held during 10th-12th ,April 2014 at Madras Institute of Technology, Anna University, Chennai, India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled “A Novel Approach for XML Stream in Wireless Mobile Scenario” in the International Conference on Advances in Computer Science and Information Technology held on 29th, March 2014 at VELS University, Chennai, India.</p>
+                  <p class="border-b-2 text-xl border-fuchsia-300"> Presented a paper titled “XML Automation Tool: A Prime method for Streaming XML in Wireless Mobile Networks” in the National Conference on Computing and Communication Engineering held on 28th,March 2014 at Agni College of Technology ,Chennai, India.</p>
+                </div>
+              
+              </details> 
+
+            </div>
+
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js" integrity="sha512-auFmPm+de880vk/c+bgBmuOnQ7BM28z7zPWmepVgX8737t75OHZjElOnQqERwP8cE4DIyCJ+gb1kE0b/eLWcnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    // Loader function
+    function initLoader() {
+      // Call the loader function to set up the Three.js scene
+      window.addEventListener('DOMContentLoaded', initScene);
+    }
+
+    function initScene() {
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+      const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("background-canvas") });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // Add moving stars
+      const starsGeometry = new THREE.BufferGeometry();
+      const starsVertices = [];
+
+      for (let i = 0; i < 1000; i++) {
+        const x = (Math.random() - 0.5) * 2000;
+        const y = (Math.random() - 0.5) * 2000;
+        const z = (Math.random() - 0.5) * 2000;
+
+        starsVertices.push(x, y, z);
+      }
+
+      starsGeometry.setAttribute('position', new THREE.Float32BufferAttribute(starsVertices, 3));
+      const starsMaterial = new THREE.PointsMaterial({ color: 0xffffff });
+      const stars = new THREE.Points(starsGeometry, starsMaterial);
+      scene.add(stars);
+
+      // Cube positions
+      const cubePositions = [
+        { x: 0, y: 0, z: 0 },
+      ];
+
+      const cubeSize = 5; // Size of each cube
+
+      for (const position of cubePositions) {
+        const cubeGeometry = new THREE.BoxGeometry(cubeSize, cubeSize, cubeSize);
+        const cubeMaterial = new THREE.MeshBasicMaterial({
+          color: 0x8A2BE2, // Violet color
+          wireframe: true,
+          wireframeLinewidth: 2,
+        });
+        const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
+
+        // Set cube position based on the provided positions
+        cube.position.set(position.x, position.y, position.z);
+
+        scene.add(cube);
+      }
+
+      // Set the camera position
+      camera.position.z = 15;
+
+      // Function to handle window resizing
+      function onWindowResize() {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+      }
+      window.addEventListener('resize', onWindowResize);
+
+      // Function to render the scene
+      function animate() {
+        requestAnimationFrame(animate);
+
+        // Rotate the cubes
+        scene.children.forEach(cube => {
+          cube.rotation.x += 0.01;
+          cube.rotation.y += 0.01;
+        });
+
+        // Move the stars slightly to create a twinkling effect
+        const speed = 0.05;
+        for (let i = 0; i < starsVertices.length; i += 3) {
+          starsVertices[i] += (Math.random() - 0.5) * speed;
+          starsVertices[i + 1] += (Math.random() - 0.5) * speed;
+          starsVertices[i + 2] += (Math.random() - 0.5) * speed;
+        }
+        starsGeometry.attributes.position.needsUpdate = true;
+
+        renderer.render(scene, camera);
+      }
+      animate();
+    }
+
+    // Call the loader function to initialize the scene creation
+    initLoader();
+  </script>
+</body>
+</html>
